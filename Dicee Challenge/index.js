@@ -8,7 +8,7 @@ var randomNumber2 = Math.floor(Math.random() * 6) + 1; //creates a random num 1-
 var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
 document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
-//which player wins
+//congratulates the winner using DOM
 if (randomNumber1 > randomNumber2) {
   document.querySelector("h1").innerHTML = "🚩 Player 1 Wins!";
 }
