@@ -18,7 +18,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 document.addEventListener("keypress", function(event) {
 
   makeSound(event.key);
-  buttonAnimation(event.key);
+  buttonAnimation(event.key); //animation for the buttons
 
 });
 
@@ -62,6 +62,7 @@ function makeSound(key){
     }
   }
 
+//animation for buttons and key press
   function buttonAnimation(currentKey) {
     var activeButton = document.querySelector("." + currentKey);
     activeButton.classList.add("pressed");
