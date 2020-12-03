@@ -1,1 +1,1 @@
-alert("Booyah");
+$("h1").css("color", "red");
