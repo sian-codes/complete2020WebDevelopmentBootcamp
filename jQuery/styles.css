@@ -1,1 +1,5 @@
-// removed CSS as need to look at UI design
+.big-title{
+  font-size: 10rem;
+  color:yellow;
+  font-family: cursive;
+}
