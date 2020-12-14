@@ -1,4 +1,4 @@
-function fibonacciGenerator(n) {
+function fibonacciGenerator(n) { // Not 100% sure 
 
   var output = [];
 
