@@ -1,4 +1,4 @@
-//alert("Works");
+//completed exercise for the Simon Game
 
 var buttonColours = ["red", "blue", "green", "yellow"]; //Array with colours
 var gamePattern = []; // empty Array
