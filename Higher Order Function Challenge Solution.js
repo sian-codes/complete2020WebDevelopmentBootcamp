@@ -1,3 +1,6 @@
+
+//Higher Order Functions Add, Subtract, multiply, devide and Calculator
+
 function add(num1, num2) {
 return num1 + num2;
 }
