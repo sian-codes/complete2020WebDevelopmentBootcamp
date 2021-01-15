@@ -85,3 +85,5 @@ function checkAnswer(currentLevel){
       gamePattern = [];
       started = false;
     }
+
+
