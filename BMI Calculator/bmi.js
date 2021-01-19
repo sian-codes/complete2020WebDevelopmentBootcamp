@@ -1,18 +1,19 @@
+const express = require('express');
+const bodyParser = require('body-parser') //bodyParser
+const app = express();
+app.use(bodyParser.urlencoded ({extended: true})); //bodyParser
+app.get("/", function(req, res){ // req & res are good code practice
+  res.sendFile(__dirname + "/bmicalculator.html");
+});
+app.post("/", function(req, res) {
 
-function bmiCalculator (weight, height) {
+  var weight = Number(req.body.weight); //turns into number
+  var height = Number(req.body.height);
   var bmi = (weight/(height*height));
-  var interpretation
 
+  res.send("Your BMI is " + bmi);
+});
+app.listen(3000, function(){
+  console.log ("server started on port 3000");
+});
 
-if (bmi < 18.5){
- interpretation= "Your BMI is " + bmi + ", so you are underweight.";
-}
-if (bmi >= 18.5 && bmi <= 24.9){
-  interpretation= "Your BMI is " + bmi + ", so you have a normal weight.";
-}
-if (bmi >24.9){
-  interpretation = "Your BMI is " + bmi + ", so you are overweight.";
-}
-return interpretation;
-}
-bmiCalculator(60, 2);
